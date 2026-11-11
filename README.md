@@ -15,6 +15,7 @@ The domain looks simple but covers most of the hard backend problems: concurrenc
 ## Roadmap
 
 **MVP**
+
 - Email/password auth (JWT), roles
 - Professional profiles and services (duration, price)
 - Working hours, breaks, time off
@@ -24,6 +25,7 @@ The domain looks simple but covers most of the hard backend problems: concurrenc
 - API docs (Swagger)
 
 **V1**
+
 - Google OAuth2 login
 - Reminders 24h / 1h before (Celery beat) via email and Telegram
 - Stripe payments (test mode) with webhooks
@@ -34,6 +36,7 @@ The domain looks simple but covers most of the hard backend problems: concurrenc
 - Docker, CI/CD, deployment, Sentry
 
 **V2**
+
 - Realtime slot updates (Django Channels)
 - Separate FastAPI notification service consuming events from a queue
 - Analytics for professionals (window functions, CTEs)
@@ -42,7 +45,7 @@ The domain looks simple but covers most of the hard backend problems: concurrenc
 
 ## Tech stack
 
-- Python 3.13+, `uv`
+- Python 3.14+, `uv`
 - Django + Django REST Framework
 - PostgreSQL, Redis
 - Celery + Celery Beat
